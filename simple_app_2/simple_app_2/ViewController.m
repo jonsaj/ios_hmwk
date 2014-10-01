@@ -14,9 +14,11 @@
 
 @implementation ViewController
 
-
 - (void)viewDidLoad
 {
+    _screenText = [[NSMutableString alloc] init];
+    _storeNum = 0;
+    _buffNum = 0;
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
 }
@@ -28,14 +30,31 @@
 }
 
 - (IBAction)buttonNumPress:(UIButton *)sender {
-    _screenOut.text
+    [_buffNum appendString: [sender titleForState:UIControlStateNormal]];
+    [_screenText appendString: [sender titleForState:UIControlStateNormal]];
+    _screenOut.text = _screenText;
 }
 
 - (IBAction)buttonPlusPress:(UIButton *)sender {
+    
+    _storeNum = _storeNum + [_buffNum intValue];
+    _screenText = [NSMutableString stringWithFormat:@"%d",_storeNum];
+    [_screenText appendString:@"+"];
+    _buffNum =[[NSMutableString alloc] init];
+    _screenOut.text = _screenText;
+
 }
 
 - (IBAction)switchSwitched:(UISwitch *)sender {
     [self flopColor];
+}
+
+- (IBAction)buttonClearPress:(UIButton *)sender {
+    _screenText = [[NSMutableString alloc] init];
+    _storeNum = 0;
+    _buffNum = 0;
+    _screenOut.text = _screenText;
+
 }
 
 - (void) flopColor{

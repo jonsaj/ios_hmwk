@@ -12,10 +12,13 @@
 @property (weak, nonatomic) IBOutlet UILabel *thatLabel;
 @property (weak, nonatomic) IBOutlet UIView *UIbkg;
 @property (weak, nonatomic) IBOutlet UILabel *screenOut;
-@property (strong, nonatomic) NSMutableString* screenText;
+@property (strong, nonatomic) NSMutableString *screenText;
+@property int storeNum;
+@property (strong, nonatomic) NSMutableString *buffNum;
 - (IBAction)buttonNumPress:(UIButton *)sender;
 - (IBAction)buttonPlusPress:(UIButton *)sender;
 - (IBAction)switchSwitched:(UISwitch *)sender;
+- (IBAction)buttonClearPress:(UIButton *)sender;
 - (void)flopColor;
 
 @end
