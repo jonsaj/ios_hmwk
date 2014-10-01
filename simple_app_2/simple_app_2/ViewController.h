@@ -11,6 +11,10 @@
 @interface ViewController : UIViewController
 @property (weak, nonatomic) IBOutlet UILabel *thatLabel;
 @property (weak, nonatomic) IBOutlet UIView *UIbkg;
+@property (weak, nonatomic) IBOutlet UILabel *screenOut;
+@property (strong, nonatomic) NSMutableString* screenText;
+- (IBAction)buttonNumPress:(UIButton *)sender;
+- (IBAction)buttonPlusPress:(UIButton *)sender;
 - (IBAction)switchSwitched:(UISwitch *)sender;
 - (void)flopColor;
 

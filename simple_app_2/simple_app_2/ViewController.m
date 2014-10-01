@@ -14,6 +14,7 @@
 
 @implementation ViewController
 
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -26,6 +27,13 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)buttonNumPress:(UIButton *)sender {
+    _screenOut.text
+}
+
+- (IBAction)buttonPlusPress:(UIButton *)sender {
+}
+
 - (IBAction)switchSwitched:(UISwitch *)sender {
     [self flopColor];
 }
@@ -34,12 +42,15 @@
     if(_UIbkg.backgroundColor == [UIColor blackColor]){
         _thatLabel.textColor = [UIColor blackColor];
         _UIbkg.backgroundColor = [UIColor whiteColor];
-        
+        _screenOut.textColor = [UIColor blackColor];
+        _thatLabel.text = @"Normal View";
     }
     else{
         _UIbkg.backgroundColor = [UIColor blackColor];
         _thatLabel.textColor = [UIColor whiteColor];
-        
+        _thatLabel.text = @"Night View";
+        _screenOut.textColor = [UIColor whiteColor];
+
     }
 }
 @end
