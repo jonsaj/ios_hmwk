@@ -1,6 +1,6 @@
 //
-//  simple_appTests.m
-//  simple_appTests
+//  simple_app_2Tests.m
+//  simple_app_2Tests
 //
 //  Created by ljsaj on 9/30/14.
 //  Copyright (c) 2014 ___FULLUSERNAME___. All rights reserved.
@@ -8,11 +8,11 @@
 
 #import <XCTest/XCTest.h>
 
-@interface simple_appTests : XCTestCase
+@interface simple_app_2Tests : XCTestCase
 
 @end
 
-@implementation simple_appTests
+@implementation simple_app_2Tests
 
 - (void)setUp
 {

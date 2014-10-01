@@ -1,6 +1,6 @@
 //
 //  AppDelegate.h
-//  simple_app
+//  simple_app_2
 //
 //  Created by ljsaj on 9/30/14.
 //  Copyright (c) 2014 ___FULLUSERNAME___. All rights reserved.

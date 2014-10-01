@@ -5,16 +5,16 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>AF16025B-49B8-4511-A840-F5D777A6D61A</string>
+	<string>83F71648-A2F9-413A-B4C2-65A4B52A6FDE</string>
 	<key>IDESourceControlProjectName</key>
-	<string>simple_app</string>
+	<string>simple_app_2</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>97454D02-4412-4732-80D0-E8396B9E70AA</key>
 		<string>https://github.com/jonsaj/ios_hmwk.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>simple_app/simple_app.xcodeproj/project.xcworkspace</string>
+	<string>simple_app_2/simple_app_2.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>97454D02-4412-4732-80D0-E8396B9E70AA</key>

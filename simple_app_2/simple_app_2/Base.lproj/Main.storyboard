@@ -16,19 +16,30 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Jcw-2t-QUh">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Night Time" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3pZ-35-9GD">
+                                <rect key="frame" x="118" y="517" width="125" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="bottomRight" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iSA-aN-LZ6">
                                 <rect key="frame" x="251" y="517" width="51" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
-                                    <action selector="nightSwitched:" destination="vXZ-lx-hvc" eventType="valueChanged" id="KHc-M0-fgO"/>
+                                    <action selector="switchSwitched:" destination="vXZ-lx-hvc" eventType="valueChanged" id="b0j-gj-Ps7"/>
                                 </connections>
                             </switch>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="iSA-aN-LZ6" secondAttribute="bottom" constant="20" id="6am-Yu-wfW"/>
+                            <constraint firstAttribute="trailing" secondItem="iSA-aN-LZ6" secondAttribute="trailing" constant="20" id="Ekb-DS-y9H"/>
+                        </constraints>
                     </view>
                     <connections>
-                        <outlet property="backgroundColor" destination="kh9-bI-dsS" id="kja-ad-yDa"/>
-                        <outlet property="backgroundMyColor" destination="kh9-bI-dsS" id="9vU-4B-kPh"/>
+                        <outlet property="UIbkg" destination="kh9-bI-dsS" id="dz1-R9-PdZ"/>
+                        <outlet property="thatLabel" destination="3pZ-35-9GD" id="kGc-JV-BxV"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
