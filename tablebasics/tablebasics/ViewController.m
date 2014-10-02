@@ -50,6 +50,7 @@
     cell.imageView.highlightedImage = cellHighImage;
     
     cell.textLabel.text = self.people[indexPath.row];
+    cell.textLabel.font = [UIFont boldSystemFontOfSize:50];
     if(indexPath.row < 7){
         cell.detailTextLabel.text = @"Idiot.";
     }
@@ -64,6 +65,10 @@
 
 - (NSInteger)tableView:(UITableView *)tableView indentationLevelForRowAtIndexPath:(NSIndexPath *)indexPath{
     return indexPath.row/4;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+    return 70;
 }
 
 @end
