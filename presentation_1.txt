@@ -1,0 +1,5 @@
+- grouped tables:
+	+ grouped table
+	+ plain table
+	+ plain table index
+
