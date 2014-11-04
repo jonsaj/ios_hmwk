@@ -21,6 +21,9 @@
 		F2E27E511A08547D00A4EFA3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2E27E331A08547D00A4EFA3 /* UIKit.framework */; };
 		F2E27E591A08547D00A4EFA3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F2E27E571A08547D00A4EFA3 /* InfoPlist.strings */; };
 		F2E27E5B1A08547D00A4EFA3 /* transposerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F2E27E5A1A08547D00A4EFA3 /* transposerTests.m */; };
+		F2E27E6B1A08DF8800A4EFA3 /* gershlogo_58.png in Resources */ = {isa = PBXBuildFile; fileRef = F2E27E6A1A08DF8800A4EFA3 /* gershlogo_58.png */; };
+		F2E27E6E1A08DFD700A4EFA3 /* gershlogo_80.png in Resources */ = {isa = PBXBuildFile; fileRef = F2E27E6C1A08DFD700A4EFA3 /* gershlogo_80.png */; };
+		F2E27E6F1A08DFD700A4EFA3 /* gershlogo_120.png in Resources */ = {isa = PBXBuildFile; fileRef = F2E27E6D1A08DFD700A4EFA3 /* gershlogo_120.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +56,9 @@
 		F2E27E561A08547D00A4EFA3 /* transposerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "transposerTests-Info.plist"; sourceTree = "<group>"; };
 		F2E27E581A08547D00A4EFA3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		F2E27E5A1A08547D00A4EFA3 /* transposerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = transposerTests.m; sourceTree = "<group>"; };
+		F2E27E6A1A08DF8800A4EFA3 /* gershlogo_58.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gershlogo_58.png; sourceTree = "<group>"; };
+		F2E27E6C1A08DFD700A4EFA3 /* gershlogo_80.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gershlogo_80.png; sourceTree = "<group>"; };
+		F2E27E6D1A08DFD700A4EFA3 /* gershlogo_120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gershlogo_120.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +132,9 @@
 		F2E27E361A08547D00A4EFA3 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				F2E27E6C1A08DFD700A4EFA3 /* gershlogo_80.png */,
+				F2E27E6D1A08DFD700A4EFA3 /* gershlogo_120.png */,
+				F2E27E6A1A08DF8800A4EFA3 /* gershlogo_58.png */,
 				F2E27E371A08547D00A4EFA3 /* transposer-Info.plist */,
 				F2E27E381A08547D00A4EFA3 /* InfoPlist.strings */,
 				F2E27E3B1A08547D00A4EFA3 /* main.m */,
@@ -229,6 +238,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				F2E27E481A08547D00A4EFA3 /* Images.xcassets in Resources */,
+				F2E27E6B1A08DF8800A4EFA3 /* gershlogo_58.png in Resources */,
+				F2E27E6F1A08DFD700A4EFA3 /* gershlogo_120.png in Resources */,
+				F2E27E6E1A08DFD700A4EFA3 /* gershlogo_80.png in Resources */,
 				F2E27E3A1A08547D00A4EFA3 /* InfoPlist.strings in Resources */,
 				F2E27E431A08547D00A4EFA3 /* Main.storyboard in Resources */,
 			);

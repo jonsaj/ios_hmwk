@@ -11,6 +11,8 @@
 @interface ViewController : UIViewController<UIPickerViewDataSource, UIPickerViewDelegate>
 @property (weak, nonatomic) IBOutlet UILabel *inputChordLabel;
 @property (weak, nonatomic) IBOutlet UIPickerView *notePicker;
+@property (weak, nonatomic) IBOutlet UILabel *intervalLabel;
+@property (weak, nonatomic) IBOutlet UISwitch *nightSwitch;
 typedef NS_ENUM(NSInteger, Note){
 A,
 As,
@@ -25,5 +27,15 @@ Fs,
 G,
 Gs
 };
+typedef NS_ENUM(NSInteger, Triad){
+    MAJ,
+    MIN,
+    AUG,
+    DIM,
+    SUS2,
+    SUS4,
+    UNK
+};
+- (IBAction)switchChanged:(UISwitch *)sender;
 
 @end
