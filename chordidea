@@ -1,0 +1,56 @@
+// A
+// A#
+// B
+// C
+// C#
+// D
+// D#
+// E
+// F
+// F#
+// G
+// G#
+
+// note: first note must be root note
+
+typedef NS_ENUM(NSInteger Note){
+	A,
+	As,
+	B,
+	C,
+	Cs,
+	D,
+	Ds,
+	E,
+	F,
+	Fs,
+	G,
+	Gs
+};
+
+typedef NS_ENUM(NSInteger Triad){
+	Major,
+	Minor,
+	Augmented,
+	Diminished,
+	Suspended4,
+	Suspended2
+}
+
+NSArray *pickersValues[] = [picker getValues];
+Note root = pickersValues[0];
+NSArray *intervals[];
+
+for(value+1 in pickervalues){
+	if(root < intervalc[value] ) {
+		intervals[value] = picker[value] - root;
+	}
+	else{
+		// raise an octave (12 chromatic notes)
+		intervals[value] = (picker[value] + 12) - root;
+	}
+}
+
+for(interval in intervals){
+	
+}
