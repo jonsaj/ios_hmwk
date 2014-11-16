@@ -41,9 +41,39 @@
                                     <action selector="switchChanged:" destination="vXZ-lx-hvc" eventType="valueChanged" id="6HB-vF-cRp"/>
                                 </connections>
                             </switch>
+                            <stepper opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" minimumValue="-12" maximumValue="12" translatesAutoresizingMaskIntoConstraints="NO" id="K5B-xW-egH">
+                                <rect key="frame" x="113" y="309" width="94" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <connections>
+                                    <action selector="stepsAction:" destination="vXZ-lx-hvc" eventType="valueChanged" id="7ZR-xe-uMR"/>
+                                </connections>
+                            </stepper>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RJk-br-w0A">
+                                <rect key="frame" x="139" y="273" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Transpose Up" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="99m-UG-sY8">
+                                <rect key="frame" x="31" y="273" width="107" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Half Steps" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mqH-fr-lS4">
+                                <rect key="frame" x="189" y="273" width="80" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="mqH-fr-lS4" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" constant="273" id="0Vb-e7-T5F"/>
+                            <constraint firstItem="K5B-xW-egH" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" constant="309" id="3Aq-QQ-4u1"/>
+                            <constraint firstItem="99m-UG-sY8" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" constant="273" id="EMX-gJ-XM7"/>
+                            <constraint firstItem="RJk-br-w0A" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" constant="273" id="Fv8-xS-oNf"/>
                             <constraint firstAttribute="bottom" secondItem="l9I-Dg-cWf" secondAttribute="bottom" constant="59" id="I7v-2Z-57S"/>
                             <constraint firstItem="J3T-3e-Zho" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" constant="68" id="Osk-3A-x2y"/>
                             <constraint firstAttribute="bottom" secondItem="bx7-MB-I3J" secondAttribute="bottom" constant="20" id="RGs-oy-kzh"/>
@@ -55,6 +85,9 @@
                         <outlet property="intervalLabel" destination="l9I-Dg-cWf" id="pDz-yY-7Bw"/>
                         <outlet property="nightSwitch" destination="bx7-MB-I3J" id="Zo4-e1-LU8"/>
                         <outlet property="notePicker" destination="J3T-3e-Zho" id="zwc-D4-2Gr"/>
+                        <outlet property="stepsLabel" destination="RJk-br-w0A" id="ygp-Ad-DRR"/>
+                        <outlet property="stepsStepper" destination="K5B-xW-egH" id="HvH-6E-hna"/>
+                        <outlet property="transUpDnLabel" destination="99m-UG-sY8" id="GOV-cE-GIZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>

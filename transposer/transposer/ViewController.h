@@ -12,7 +12,11 @@
 @property (weak, nonatomic) IBOutlet UILabel *inputChordLabel;
 @property (weak, nonatomic) IBOutlet UIPickerView *notePicker;
 @property (weak, nonatomic) IBOutlet UILabel *intervalLabel;
+@property (weak, nonatomic) IBOutlet UIStepper *stepsStepper;
+@property (weak, nonatomic) IBOutlet UILabel *stepsLabel;
 @property (weak, nonatomic) IBOutlet UISwitch *nightSwitch;
+@property (weak, nonatomic) IBOutlet UILabel *transUpDnLabel;
+- (IBAction)stepsAction:(id)sender;
 typedef NS_ENUM(NSInteger, Note){
 A,
 As,
@@ -37,5 +41,7 @@ typedef NS_ENUM(NSInteger, Triad){
     UNK
 };
 - (IBAction)switchChanged:(UISwitch *)sender;
+
+//- (IBAction)switchChanged:(UISwitch *)setpsStepper;
 
 @end
