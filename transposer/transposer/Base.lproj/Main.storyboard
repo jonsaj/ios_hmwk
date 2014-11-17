@@ -67,6 +67,12 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nDA-XQ-49g">
+                                <rect key="frame" x="139" y="369" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -85,6 +91,7 @@
                         <outlet property="intervalLabel" destination="l9I-Dg-cWf" id="pDz-yY-7Bw"/>
                         <outlet property="nightSwitch" destination="bx7-MB-I3J" id="Zo4-e1-LU8"/>
                         <outlet property="notePicker" destination="J3T-3e-Zho" id="zwc-D4-2Gr"/>
+                        <outlet property="resultLabel" destination="nDA-XQ-49g" id="jcG-hA-jGT"/>
                         <outlet property="stepsLabel" destination="RJk-br-w0A" id="ygp-Ad-DRR"/>
                         <outlet property="stepsStepper" destination="K5B-xW-egH" id="HvH-6E-hna"/>
                         <outlet property="transUpDnLabel" destination="99m-UG-sY8" id="GOV-cE-GIZ"/>

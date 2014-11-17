@@ -5,16 +5,21 @@
 //  Created by ljsaj on 11/3/14.
 //  Copyright (c) 2014 com.gersh. All rights reserved.
 //
+// note that enums and nsarray in objective c should never be used. They don't play well together.
 
 #import "ViewController.h"
 
 @interface ViewController (){
-//    NSArray *_pickerData;
     NSArray *_pickerNotes;
-//    NSMutableArray *_triad;
     NSArray *_triad;
+    NSArray *_inChord;
+    NSArray *_outChord;
+    NSArray *_notesss;
     Triad triadType;
+    int transSteps;
+    Note _oldChord[3];
 }
+
 
 @end
 
@@ -44,15 +49,21 @@
                     , nil];
     _triad = [NSArray alloc];
 
+    _notesss = [[NSArray alloc] initWithObjects:A,B,C, nil];
+    
     self.notePicker.dataSource = self;
     self.notePicker.delegate = self;
 
+    _inChord = [[NSArray alloc] initWithObjects:
+              [NSNumber numberWithInt:A],
+              [NSNumber numberWithInt:A],
+              [NSNumber numberWithInt:A],
+              nil];
 
-    
+    _oldChord[0] = A;
+    _oldChord[1] = A;
+    _oldChord[2] = B;
 }
-
-
-
 
 - (Note)nsnumberToNote:(NSNumber*)num {
     return [num intValue];
@@ -200,25 +211,30 @@
     }
 }
 
+
+    
+- (void)updateDisplay
+{
+    
+}
+
+
 - (void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component
 {
-//    [_triad setObject:[NSNumber numberWithInt:[self noteToInt:[self intToNote:[_pickerNotes objectAtIndex:[pickerView selectedRowInComponent:0]]]]] atIndexedSubscript:0];
-    int firstInterval = [self getInterval:[self noteToInt:[self nsnumberToNote:[_pickerNotes objectAtIndex:[pickerView selectedRowInComponent:0]]]] toNote:[self noteToInt:[self nsnumberToNote:[_pickerNotes objectAtIndex:[pickerView selectedRowInComponent:1]]]]];
-    int secondInterval = [self getInterval:[self noteToInt:[self nsnumberToNote:[_pickerNotes objectAtIndex:[pickerView selectedRowInComponent:0]]]] toNote:[self noteToInt:[self nsnumberToNote:[_pickerNotes objectAtIndex:[pickerView selectedRowInComponent:2]]]]];
-//    [_triad insertObject:[NSNumber numberWithInteger:firstInterval] atIndex:0];
-//    [_triad insertObject:[NSNumber numberWithInteger:secondInterval] atIndex:1];
-//    [_triad sortUsingSelector:@selector(compare:)];
+//    int firstInterval = [self getInterval:[self noteToInt:[self nsnumberToNote:[_pickerNotes objectAtIndex:[pickerView selectedRowInComponent:0]]]] toNote:[self noteToInt:[self nsnumberToNote:[_pickerNotes objectAtIndex:[pickerView selectedRowInComponent:1]]]]];
+//    int secondInterval = [self getInterval:[self noteToInt:[self nsnumberToNote:[_pickerNotes objectAtIndex:[pickerView selectedRowInComponent:0]]]] toNote:[self noteToInt:[self nsnumberToNote:[_pickerNotes objectAtIndex:[pickerView selectedRowInComponent:2]]]]];
+    
+    int firstInterval = [self getInterval:[self noteToInt:_oldChord[0]] toNote:[self noteToInt:_oldChord[1]]];
+    int secondInterval = [self getInterval:[self noteToInt:_oldChord[0]] toNote:[self noteToInt:_oldChord[2]]];
     
     if(firstInterval <= secondInterval){
-//        NSLog(@"Good:%i %i", firstInterval, secondInterval);
     }
     else{
         int temp = secondInterval;
         secondInterval = firstInterval;
         firstInterval = temp;
-//        NSLog(@"Rever:%i %i", secondInterval, firstInterval);
     }
-// Will change this to a dictionary check, or sorted array check. We'll see.
+
     triadType = UNK;
     if(firstInterval == 4){
         if(secondInterval == 7){
@@ -247,17 +263,13 @@
     
     _inputChordLabel.text = [self triadToNsString:triadType
                                            ofRoot:[self nsnumberToNote:[_pickerNotes objectAtIndex:[pickerView selectedRowInComponent:0]]]];
-    
-//    _inputChordLabel.text = [NSString stringWithFormat:@"%@ %@ %@",
-//                             [self noteToString:[self intToNote:[_pickerNotes objectAtIndex:[pickerView selectedRowInComponent:0]]]],
-//                             [self noteToString:[self intToNote:[_pickerNotes objectAtIndex:[pickerView selectedRowInComponent:1]]]],
-//                             [self noteToString:[self intToNote:[_pickerNotes objectAtIndex:[pickerView selectedRowInComponent:2]]]],
-//                             nil];
     _intervalLabel.text = [NSString stringWithFormat:@"Root:%@ %i %i",
                            [self noteToString:[self nsnumberToNote:[_pickerNotes objectAtIndex:[pickerView selectedRowInComponent:0]]]],
                            firstInterval,
                            secondInterval
                            ];
+    
+    [self updateDisplay];
 }
 
 - (int)numberOfComponentsInPickerView:(UIPickerView *)pickerView
@@ -311,15 +323,19 @@
 }
 
 - (IBAction)stepsAction:(id)sender {
-    
+    transSteps = stepsStepper.value;
     if(stepsStepper.value > 0){
         _transUpDnLabel.text = @"Transpose Up";
     }else{
         _transUpDnLabel.text = @"Transpose Dn";
     }
-        
-        
-    stepsLabel.text = [NSString stringWithFormat:@"%.f",fabs(stepsStepper.value)];
+    stepsLabel.text = [NSString stringWithFormat:@"%.f",fabs(transSteps)];
+    
+    
+    
+    
+    [self updateDisplay];
+
 //    stepsLabel.text = [NSString stringWithFormat:@"%@",[self noteToString:[self intToNote:stepsStepper.value]]];
 //    stepsLabel.text = [NSString stringWithFormat:@"%@",;
     

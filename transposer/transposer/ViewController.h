@@ -16,6 +16,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *stepsLabel;
 @property (weak, nonatomic) IBOutlet UISwitch *nightSwitch;
 @property (weak, nonatomic) IBOutlet UILabel *transUpDnLabel;
+@property (weak, nonatomic) IBOutlet UILabel *resultLabel;
 - (IBAction)stepsAction:(id)sender;
 typedef NS_ENUM(NSInteger, Note){
 A,
