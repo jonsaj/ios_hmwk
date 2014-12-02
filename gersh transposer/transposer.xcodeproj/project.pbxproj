@@ -7,6 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F21D833B1A2D92F800ED9655 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F21D833A1A2D92F800ED9655 /* AVFoundation.framework */; };
+		F21D834A1A2D95E900ED9655 /* _readme_and_license.txt in Resources */ = {isa = PBXBuildFile; fileRef = F21D833D1A2D95E900ED9655 /* _readme_and_license.txt */; };
+		F21D834B1A2D95E900ED9655 /* A#.wav in Resources */ = {isa = PBXBuildFile; fileRef = F21D833E1A2D95E900ED9655 /* A#.wav */; };
+		F21D834C1A2D95E900ED9655 /* A.wav in Resources */ = {isa = PBXBuildFile; fileRef = F21D833F1A2D95E900ED9655 /* A.wav */; };
+		F21D834D1A2D95E900ED9655 /* B.wav in Resources */ = {isa = PBXBuildFile; fileRef = F21D83401A2D95E900ED9655 /* B.wav */; };
+		F21D834E1A2D95E900ED9655 /* C#.wav in Resources */ = {isa = PBXBuildFile; fileRef = F21D83411A2D95E900ED9655 /* C#.wav */; };
+		F21D834F1A2D95E900ED9655 /* C.wav in Resources */ = {isa = PBXBuildFile; fileRef = F21D83421A2D95E900ED9655 /* C.wav */; };
+		F21D83501A2D95E900ED9655 /* D#.wav in Resources */ = {isa = PBXBuildFile; fileRef = F21D83431A2D95E900ED9655 /* D#.wav */; };
+		F21D83511A2D95E900ED9655 /* D.wav in Resources */ = {isa = PBXBuildFile; fileRef = F21D83441A2D95E900ED9655 /* D.wav */; };
+		F21D83521A2D95E900ED9655 /* E.wav in Resources */ = {isa = PBXBuildFile; fileRef = F21D83451A2D95E900ED9655 /* E.wav */; };
+		F21D83531A2D95E900ED9655 /* F#.wav in Resources */ = {isa = PBXBuildFile; fileRef = F21D83461A2D95E900ED9655 /* F#.wav */; };
+		F21D83541A2D95E900ED9655 /* F.wav in Resources */ = {isa = PBXBuildFile; fileRef = F21D83471A2D95E900ED9655 /* F.wav */; };
+		F21D83551A2D95E900ED9655 /* G#.wav in Resources */ = {isa = PBXBuildFile; fileRef = F21D83481A2D95E900ED9655 /* G#.wav */; };
+		F21D83561A2D95E900ED9655 /* G.wav in Resources */ = {isa = PBXBuildFile; fileRef = F21D83491A2D95E900ED9655 /* G.wav */; };
 		F2E27E301A08547D00A4EFA3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2E27E2F1A08547D00A4EFA3 /* Foundation.framework */; };
 		F2E27E321A08547D00A4EFA3 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2E27E311A08547D00A4EFA3 /* CoreGraphics.framework */; };
 		F2E27E341A08547D00A4EFA3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2E27E331A08547D00A4EFA3 /* UIKit.framework */; };
@@ -37,6 +51,20 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F21D833A1A2D92F800ED9655 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		F21D833D1A2D95E900ED9655 /* _readme_and_license.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = _readme_and_license.txt; sourceTree = "<group>"; };
+		F21D833E1A2D95E900ED9655 /* A#.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "A#.wav"; sourceTree = "<group>"; };
+		F21D833F1A2D95E900ED9655 /* A.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = A.wav; sourceTree = "<group>"; };
+		F21D83401A2D95E900ED9655 /* B.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = B.wav; sourceTree = "<group>"; };
+		F21D83411A2D95E900ED9655 /* C#.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "C#.wav"; sourceTree = "<group>"; };
+		F21D83421A2D95E900ED9655 /* C.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = C.wav; sourceTree = "<group>"; };
+		F21D83431A2D95E900ED9655 /* D#.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "D#.wav"; sourceTree = "<group>"; };
+		F21D83441A2D95E900ED9655 /* D.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = D.wav; sourceTree = "<group>"; };
+		F21D83451A2D95E900ED9655 /* E.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = E.wav; sourceTree = "<group>"; };
+		F21D83461A2D95E900ED9655 /* F#.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "F#.wav"; sourceTree = "<group>"; };
+		F21D83471A2D95E900ED9655 /* F.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = F.wav; sourceTree = "<group>"; };
+		F21D83481A2D95E900ED9655 /* G#.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "G#.wav"; sourceTree = "<group>"; };
+		F21D83491A2D95E900ED9655 /* G.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = G.wav; sourceTree = "<group>"; };
 		F2E27E2C1A08547D00A4EFA3 /* transposer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = transposer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2E27E2F1A08547D00A4EFA3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		F2E27E311A08547D00A4EFA3 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -66,6 +94,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F21D833B1A2D92F800ED9655 /* AVFoundation.framework in Frameworks */,
 				F2E27E321A08547D00A4EFA3 /* CoreGraphics.framework in Frameworks */,
 				F2E27E341A08547D00A4EFA3 /* UIKit.framework in Frameworks */,
 				F2E27E301A08547D00A4EFA3 /* Foundation.framework in Frameworks */,
@@ -85,6 +114,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F21D833C1A2D95E900ED9655 /* piano */ = {
+			isa = PBXGroup;
+			children = (
+				F21D833D1A2D95E900ED9655 /* _readme_and_license.txt */,
+				F21D833E1A2D95E900ED9655 /* A#.wav */,
+				F21D833F1A2D95E900ED9655 /* A.wav */,
+				F21D83401A2D95E900ED9655 /* B.wav */,
+				F21D83411A2D95E900ED9655 /* C#.wav */,
+				F21D83421A2D95E900ED9655 /* C.wav */,
+				F21D83431A2D95E900ED9655 /* D#.wav */,
+				F21D83441A2D95E900ED9655 /* D.wav */,
+				F21D83451A2D95E900ED9655 /* E.wav */,
+				F21D83461A2D95E900ED9655 /* F#.wav */,
+				F21D83471A2D95E900ED9655 /* F.wav */,
+				F21D83481A2D95E900ED9655 /* G#.wav */,
+				F21D83491A2D95E900ED9655 /* G.wav */,
+			);
+			path = piano;
+			sourceTree = "<group>";
+		};
 		F2E27E231A08547D00A4EFA3 = {
 			isa = PBXGroup;
 			children = (
@@ -107,6 +156,7 @@
 		F2E27E2E1A08547D00A4EFA3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F21D833A1A2D92F800ED9655 /* AVFoundation.framework */,
 				F2E27E2F1A08547D00A4EFA3 /* Foundation.framework */,
 				F2E27E311A08547D00A4EFA3 /* CoreGraphics.framework */,
 				F2E27E331A08547D00A4EFA3 /* UIKit.framework */,
@@ -124,14 +174,15 @@
 				F2E27E441A08547D00A4EFA3 /* ViewController.h */,
 				F2E27E451A08547D00A4EFA3 /* ViewController.m */,
 				F2E27E471A08547D00A4EFA3 /* Images.xcassets */,
-				F2E27E361A08547D00A4EFA3 /* Supporting Files */,
+				F2E27E361A08547D00A4EFA3 /* Sup/Users/ljsaj/Downloads/pianoporting Files */,
 			);
 			path = transposer;
 			sourceTree = "<group>";
 		};
-		F2E27E361A08547D00A4EFA3 /* Supporting Files */ = {
+		F2E27E361A08547D00A4EFA3 /* Sup/Users/ljsaj/Downloads/pianoporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				F21D833C1A2D95E900ED9655 /* piano */,
 				F2E27E6C1A08DFD700A4EFA3 /* gershlogo_80.png */,
 				F2E27E6D1A08DFD700A4EFA3 /* gershlogo_120.png */,
 				F2E27E6A1A08DF8800A4EFA3 /* gershlogo_58.png */,
@@ -140,7 +191,7 @@
 				F2E27E3B1A08547D00A4EFA3 /* main.m */,
 				F2E27E3D1A08547D00A4EFA3 /* transposer-Prefix.pch */,
 			);
-			name = "Supporting Files";
+			name = "Sup/Users/ljsaj/Downloads/pianoporting Files";
 			sourceTree = "<group>";
 		};
 		F2E27E541A08547D00A4EFA3 /* transposerTests */ = {
@@ -237,11 +288,24 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F21D83521A2D95E900ED9655 /* E.wav in Resources */,
+				F21D83501A2D95E900ED9655 /* D#.wav in Resources */,
+				F21D834F1A2D95E900ED9655 /* C.wav in Resources */,
+				F21D834C1A2D95E900ED9655 /* A.wav in Resources */,
+				F21D834D1A2D95E900ED9655 /* B.wav in Resources */,
+				F21D83541A2D95E900ED9655 /* F.wav in Resources */,
 				F2E27E481A08547D00A4EFA3 /* Images.xcassets in Resources */,
+				F21D834A1A2D95E900ED9655 /* _readme_and_license.txt in Resources */,
+				F21D834E1A2D95E900ED9655 /* C#.wav in Resources */,
 				F2E27E6B1A08DF8800A4EFA3 /* gershlogo_58.png in Resources */,
 				F2E27E6F1A08DFD700A4EFA3 /* gershlogo_120.png in Resources */,
+				F21D83511A2D95E900ED9655 /* D.wav in Resources */,
+				F21D83531A2D95E900ED9655 /* F#.wav in Resources */,
 				F2E27E6E1A08DFD700A4EFA3 /* gershlogo_80.png in Resources */,
+				F21D83561A2D95E900ED9655 /* G.wav in Resources */,
+				F21D83551A2D95E900ED9655 /* G#.wav in Resources */,
 				F2E27E3A1A08547D00A4EFA3 /* InfoPlist.strings in Resources */,
+				F21D834B1A2D95E900ED9655 /* A#.wav in Resources */,
 				F2E27E431A08547D00A4EFA3 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -468,6 +532,7 @@
 				F2E27E601A08547D00A4EFA3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F2E27E611A08547D00A4EFA3 /* Build configuration list for PBXNativeTarget "transposerTests" */ = {
 			isa = XCConfigurationList;
@@ -476,6 +541,7 @@
 				F2E27E631A08547D00A4EFA3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -17,6 +17,9 @@
 @property (weak, nonatomic) IBOutlet UISwitch *nightSwitch;
 @property (weak, nonatomic) IBOutlet UILabel *transUpDnLabel;
 @property (weak, nonatomic) IBOutlet UILabel *resultLabel;
+@property (weak, nonatomic) IBOutlet UILabel *resultingChord;
+@property (weak, nonatomic) IBOutlet UIButton *playChordButton;
+@property (weak, nonatomic) IBOutlet UILabel *outputChordName;
 - (IBAction)stepsAction:(id)sender;
 typedef NS_ENUM(NSInteger, Note){
 A,
@@ -44,5 +47,6 @@ typedef NS_ENUM(NSInteger, Triad){
 - (IBAction)switchChanged:(UISwitch *)sender;
 
 //- (IBAction)switchChanged:(UISwitch *)setpsStepper;
+@property (weak, nonatomic) IBOutlet UIButton *outputChordButtonPress;
 
 @end
